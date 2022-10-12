@@ -1,0 +1,89 @@
+<html>
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <link rel="stylesheet" href="/static/css/style_examples.css">
+    </head>
+    <body>
+
+        <script>
+            function show_video(criteria) {
+                var obj_good= document.getElementById("good")
+                obj_good.src = "/static/sample_videos/" + criteria + "_good.mp4"
+                obj_good.style.display = "inline"
+
+                var obj_bad = document.getElementById("bad")
+                obj_bad.src = "/static/sample_videos/" + criteria + "_bad.mp4"
+                obj_bad.style.display = "inline"
+
+
+                
+            }
+        </script>
+
+      <div id="container">
+
+        <div id="heading">
+          <h1>Example Vidoes</h1>
+
+          <p>Use the buttons below to show example vidoes for the various criteria and corresponding score</p>
+
+        </div>
+        
+        <div id="buttons_menu">
+                <button onclick="show_video('ventricle')">Ventricles</button>
+                <button onclick="show_video('atria')">Atria</button>
+                <button onclick="show_video('mv_tv')">MV and TV</button>
+                <button onclick="show_video('center')">Centering</button>
+                <button onclick="show_video('depth')">Depth</button>
+                <button onclick="show_video('gain')">Gain</button>
+
+        </div>
+        
+
+        <div id="videos">
+            <div id="good_video">
+                <video id="good" style="display:none;" autoplay="true" controls="true" loop="true" width="300">
+            </div>
+            
+            <div id="bad_video">
+                <video id="bad" style="display:none;" autoplay="true" controls="true" loop="true" width="300"></video>
+            
+            </div>
+
+        </div>
+        
+        
+        <div id="good_bad">
+
+          <h5 id='good_head'>Good</h5>
+          <h5 id='bad_head'>Bad</h5>
+
+        </div>
+
+        <div id="reset">
+          <button onClick="window.location.reload()">
+              Refresh
+          </button>
+        </div>
+
+        
+        <div>
+
+          <button >
+            <a href="{{ url_for('index') }}" id="home_button">Home</a>
+          </button>
+        </div>
+        
+
+      </div>
+
+
+
+
+    </body>
+  </html>
+</html>

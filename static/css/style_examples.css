@@ -1,0 +1,77 @@
+#good_video {
+  float: left;
+}
+
+#bad_video {
+  float: right;
+}
+
+#videos {
+  width: 70%;
+  margin: auto;
+  padding-bottom: ;
+}
+
+#container {
+  font-family: Arial, Helvetica, sans-serif;
+  border-color: black;
+  background-color: rgb(207, 207, 211);
+  border-style: solid;
+  margin: auto;
+  width: 70%;
+  overflow: hidden;
+}
+
+#buttons_menu {
+  margin-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+}
+
+#heading {
+  margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+#buttons_menu {
+  text-align: center;
+}
+
+button {
+  font-size: 15px;
+  height: 4em;
+  width: 8em;
+}
+
+#reset {
+  clear: both;
+  padding-top: 0em;
+  padding-bottom: 1em;
+  text-align: center;
+}
+
+#good_bad {
+  width: 45%;
+  margin: auto;
+  font-size: 30px;
+  clear: both;
+  text-align: center;
+}
+
+#good_head {
+  float: left;
+}
+
+#bad_head {
+  float: right;
+}
+
+#home_button {
+  font-size: 20px;
+  text-decoration: none;
+
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
