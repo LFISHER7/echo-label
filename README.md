@@ -2,6 +2,8 @@
 
 Web app for labelling of echocardiography video clips (A4C).
 
+![sample](static/sample.png)
+
 ## How to use
 
 Run the app by running:
